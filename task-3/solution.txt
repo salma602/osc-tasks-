@@ -17,6 +17,7 @@ tar -xzvf /home/osc/project_files/logs_backup.tar -C home/osc/project_files/logs
 find ~ -name "*.md"
 find /home/osc/project_files -name "*.log"
 find -name "file1.pdf"
+find /home/osc/project_files-iname "*.pdf"
 find /home/osc/project_files/logs -type f
 ln -s /home/osc/project_files/data/data.csv link_data.csv
 nano /home/osc/project_files/data/data.csv
@@ -29,4 +30,3 @@ wc -w /home/osc/project_files/reports/report1.md
 wc -c /home/osc/project_files/logs/system.log >> /home/osc/project_files/summary.txt
 find /home/osc/project_files | wc -l >> /home/osc/project_files/summary.txt
 cat /home/osc/project_files/summary.txt
-
