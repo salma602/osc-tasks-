@@ -1,10 +1,10 @@
 sudo useradd newuser
 sudo groupadd newgroup
 sudo usermod -a -G newgroup newuser
-groups newuser
+sudo groups newuser
 mkdir  /home/osc/task_dir
 touch /home/osc/task_dir/sample.txt
-chmod 640 /home/osc/task_dir/sample.txt
+sudo chmod 640 /home/osc/task_dir/sample.txt
 sudo chown newuser /home/osc/task_dir/sample.txt
 sudo chgrp newgroup /home/osc/task_dir/sample.txt
 sudo groupdel newgroup
